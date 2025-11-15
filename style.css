@@ -1,0 +1,147 @@
+/* -------------------- RESET -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* -------------------- NAVBAR -------------------- */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #444;
+  font-size: 18px;
+}
+
+.navbar nav a:hover {
+  color: #d32f2f;
+}
+
+/* -------------------- HERO SECTION -------------------- */
+.hero-section {
+  height: 85vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px; /* pour éviter que le texte passe derrière la navbar */
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(60%);
+}
+
+.hero-content h2 {
+  font-size: 45px;
+  color: white;
+  font-weight: bold;
+}
+
+.hero-content p {
+  color: #f0f0f0;
+  margin: 10px 0 20px;
+}
+
+.btn {
+  background: #d32f2f;
+  padding: 12px 25px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background: #b71c1c;
+}
+
+/* -------------------- MENU -------------------- */
+.menu-section {
+  padding: 70px 40px;
+  text-align: center;
+}
+
+.menu-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.menu-item {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Corrige la taille énorme des images */
+.menu-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* -------------------- ABOUT -------------------- */
+.about-section {
+  padding: 70px 40px;
+  text-align: center;
+  background: #fff5e6;
+}
+
+.about-video {
+  width: 70%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* -------------------- CONTACT -------------------- */
+.contact-section {
+  padding: 70px 40px;
+  text-align: center;
+  background: white;
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
